@@ -1,0 +1,21 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto; /* auto dos lados */
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr; /* fr quer dizer que algo terá o tamanho flexível */
+    gap: 2rem; /* Espaçamento entre colunas de 32px */
+    align-items: flex-start; /* Faz a sidebar e a div de post fiquem alinhados para o topo */
+}
+
+@media (max-width: 768px){
+    html {
+        font-size: 87.5%; /* 16 = 100%, então 14 = 87% */
+    }
+
+    .wrapper {
+        grid-template-columns:  1fr;
+    }
+
+}
